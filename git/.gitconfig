@@ -3,7 +3,7 @@
 	email = kevin.frapin@gmail.com
 [core]
 	editor = gvim
-	excludesfile = /home/kevin/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	whitespace = trailing-space,space-before-tab,indent-with-non-tab
 [help]

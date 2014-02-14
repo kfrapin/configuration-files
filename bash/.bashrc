@@ -115,6 +115,7 @@ alias ga="git add"
 alias gc="git commit -m"
 alias gd="git diff"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias gp="git push"
 alias gs="git status"
 
 ####################

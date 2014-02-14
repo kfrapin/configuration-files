@@ -1,0 +1,16 @@
+[user]
+	name = kfrapin
+	email = kevin.frapin@gmail.com
+[core]
+	editor = gvim
+	excludesfile = /home/kevin/.gitignore_global
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+[help]
+	autocorrect = 1
+[color]
+	ui = true
+[diff "word"]
+	textconv = strings
+[diff "exif"]
+	textconv = exiftool

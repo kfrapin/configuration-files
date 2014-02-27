@@ -128,3 +128,8 @@ umask 007
 ####################
 EDITOR="/usr/bin/gvim --remote-silent"
 export EDITOR
+
+####################
+# Symfony
+####################
+alias console="php app/console"

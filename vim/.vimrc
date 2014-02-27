@@ -147,3 +147,9 @@ let g:Tex_ViewRule_pdf='evince'
 
 " Compilation of a file
 let g:Tex_CompileRule_pdf = 'pdflatex --interaction=nonstopmode $*'
+
+
+""""""""""""""""""""""""""""""""""""""
+" Jinja - Twig files settings
+""""""""""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig set filetype=jinja

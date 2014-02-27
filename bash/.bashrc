@@ -121,7 +121,7 @@ alias gs="git status"
 ####################
 # User rights
 ####################
-umask 077
+umask 007
 
 ####################
 # Editor

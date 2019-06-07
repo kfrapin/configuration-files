@@ -46,7 +46,7 @@ set ignorecase smartcase
 let mapleader=","
 
 """"""""""""""""""""""""""""""""""""""
-" Windows mappings
+" Key mappings
 """"""""""""""""""""""""""""""""""""""
 " Move among windows
 noremap <silent> <Leader>h :wincmd h<CR>
@@ -84,11 +84,11 @@ noremap <silent> <Leader>mj <C-W>J
 " Edition mappings
 """"""""""""""""""""""""""""""""""""""
 " Edit the vimrc file
-nmap <silent> <Leader>ev :e $MYVIMRC<CR>
-nmap <silent> <Leader>sv :so $MYVIMRC<CR>
+nmap <silent> <Leader>ev :e $HOME/.vimrc<CR>
+nmap <silent> <Leader>sv :so $HOME/.vimrc<CR>
 
 " Edit the bashrc file
-nmap <silent> <Leader>eb :e $HOME/.bashrc<CR>
+nmap <silent> <Leader>eb :e $HOME/.zshrc<CR>
 
 """"""""""""""""""""""""""""""""""""""
 " NERDTree settings
@@ -100,8 +100,8 @@ noremap <silent> <Leader>nt :NERDTreeToggle<CR>
 " #########################################################
 " Colors for vim
 " #########################################################
-" Ruby colors
-colorscheme rubyblue
+" Solarizd8
+colorscheme solarized8_flat
 
 
 " #########################################################
@@ -112,6 +112,7 @@ colorscheme rubyblue
 " Pathogen settings
 """"""""""""""""""""""""""""""""""""""
 call pathogen#infect()
+call pathogen#helptags()
 
 """"""""""""""""""""""""""""""""""""""
 " Vim-LaTeX settings
@@ -147,9 +148,3 @@ let g:Tex_ViewRule_pdf='evince'
 
 " Compilation of a file
 let g:Tex_CompileRule_pdf = 'pdflatex --interaction=nonstopmode $*'
-
-
-""""""""""""""""""""""""""""""""""""""
-" Jinja - Twig files settings
-""""""""""""""""""""""""""""""""""""""
-au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig set filetype=jinja
